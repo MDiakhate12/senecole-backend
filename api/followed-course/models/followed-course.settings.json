@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "followed_courses",
+  "info": {
+    "name": "followed_course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/followed-courses",
+      "handler": "followed-course.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/followed-courses/count",
+      "handler": "followed-course.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/followed-courses/:id",
+      "handler": "followed-course.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/followed-courses",
+      "handler": "followed-course.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/followed-courses/:id",
+      "handler": "followed-course.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/followed-courses/:id",
+      "handler": "followed-course.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

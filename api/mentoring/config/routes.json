@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mentorings",
+      "handler": "mentoring.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentorings/count",
+      "handler": "mentoring.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mentorings/:id",
+      "handler": "mentoring.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mentorings",
+      "handler": "mentoring.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mentorings/:id",
+      "handler": "mentoring.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mentorings/:id",
+      "handler": "mentoring.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mentorings",
+  "info": {
+    "name": "mentoring"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "duration": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "progress": {
+      "type": "integer",
+      "max": 100,
+      "min": 1
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}
