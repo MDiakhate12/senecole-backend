@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "teachers",
   "info": {
-    "name": "teacher"
+    "name": "teacher",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,6 +15,19 @@
     "user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "courses": {
+      "collection": "course",
+      "via": "teacher"
+    },
+    "mentorings": {
+      "collection": "mentoring",
+      "via": "teacher"
+    },
+    "subjects": {
+      "collection": "subject",
+      "via": "teachers",
+      "dominant": true
     }
   }
 }

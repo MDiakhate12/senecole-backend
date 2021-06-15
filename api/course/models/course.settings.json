@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "courses",
   "info": {
-    "name": "course"
+    "name": "course",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,32 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "levels": {
+      "collection": "level",
+      "via": "courses",
+      "dominant": true
+    },
+    "streams": {
+      "collection": "stream",
+      "via": "courses",
+      "dominant": true
+    },
+    "subject": {
+      "model": "subject",
+      "via": "courses"
+    },
+    "teacher": {
+      "via": "courses",
+      "model": "teacher"
+    },
+    "reviews": {
+      "via": "course",
+      "collection": "review"
+    },
+    "followed_courses": {
+      "via": "course",
+      "collection": "followed-course"
     }
   }
 }

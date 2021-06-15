@@ -1,0 +1,14 @@
+runtime: nodejs12
+
+instance_class: F2
+
+env_variables:
+  NODE_ENV: 'production'
+  DATABASE_HOST: 'clusterprovisionning.3p11m.mongodb.net'
+  DATABASE_SRV: true
+  DATABASE_PORT: 27017
+  DATABASE_NAME: 'senecole'
+  DATABASE_USERNAME: 'Amet'
+  DATABASE_PASSWORD: 'amet'
+  AUTHENTICATION_DATABASE: null
+  DATABASE_SSL: true

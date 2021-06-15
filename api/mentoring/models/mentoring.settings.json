@@ -24,6 +24,10 @@
     },
     "status": {
       "type": "boolean"
+    },
+    "teacher": {
+      "via": "mentorings",
+      "model": "teacher"
     }
   }
 }

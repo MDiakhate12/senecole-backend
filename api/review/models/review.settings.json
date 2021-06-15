@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "reviews",
   "info": {
-    "name": "review"
+    "name": "review",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,5 +11,20 @@
     "draftAndPublish": true
   },
   "pluginOptions": {},
-  "attributes": {}
+  "attributes": {
+    "rate": {
+      "type": "integer"
+    },
+    "comment": {
+      "type": "text"
+    },
+    "course": {
+      "model": "course",
+      "via": "reviews"
+    },
+    "student": {
+      "model": "student",
+      "via": "reviews"
+    }
+  }
 }

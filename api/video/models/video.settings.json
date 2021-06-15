@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "streams",
+  "collectionName": "videos",
   "info": {
-    "name": "stream"
+    "name": "video"
   },
   "options": {
     "increments": true,
@@ -11,12 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "url": {
       "type": "string"
     },
-    "courses": {
-      "via": "streams",
-      "collection": "course"
+    "position": {
+      "type": "integer"
+    },
+    "course": {
+      "model": "course"
     }
   }
 }

@@ -14,6 +14,14 @@
     "user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "reviews": {
+      "via": "student",
+      "collection": "review"
+    },
+    "followed_courses": {
+      "via": "student",
+      "collection": "followed-course"
     }
   }
 }

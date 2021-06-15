@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "followed_courses",
   "info": {
-    "name": "followed_course"
+    "name": "followed_course",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,6 +14,17 @@
   "attributes": {
     "date": {
       "type": "datetime"
+    },
+    "course": {
+      "model": "course",
+      "via": "followed_courses"
+    },
+    "student": {
+      "model": "student",
+      "via": "followed_courses"
+    },
+    "progress": {
+      "type": "integer"
     }
   }
 }

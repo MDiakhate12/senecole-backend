@@ -13,6 +13,14 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "courses": {
+      "via": "subject",
+      "collection": "course"
+    },
+    "teachers": {
+      "via": "subjects",
+      "collection": "teacher"
     }
   }
 }

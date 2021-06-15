@@ -13,6 +13,10 @@
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "courses": {
+      "via": "levels",
+      "collection": "course"
     }
   }
 }
